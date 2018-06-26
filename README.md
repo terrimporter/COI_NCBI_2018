@@ -5,6 +5,13 @@ This repository contains the scripts used to generate and analyze data for Porte
 ## Overview
 
 [Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](##Part-I---Retrieve-Taxonomy-IDs-from-the-NCBI-taxonomy-database)
+[Part II - Retrieve COI records from the NCBI nucleotide database](##Part-II---Retrieve-COI-records-from-the-NCBI-nucleotide-database)
+[Part III - Parse through the COI GenBank records and print reports](##Part-III---Parse-through-the-COI-GenBank-records-and-print-reports)
+[Part IV - IUCN endangered animal species data analysis](##Part-IV---IUCN-endangered-animal-species-data-analysis)
+[Part V - BARCODE dataset](##Part-V---BARCODE-dataset)
+[Part VI - Freshwater dataset](##Part-VI---Freshwater-dataset)
+[Part VII - Map country & latlon metadata with R](##Part-VII---Map-country-&-latlon-metadata-with-R)
+[Part VIII - Other R figures](##Part-VIII---Other-R-figures)
 
 ## Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database
 
@@ -137,7 +144,7 @@ python3 IUCN_map.py
 
 The outfile is IUCN_gg_latlon.csv 
 
-## Part V: BARCODE dataset
+## Part V - BARCODE dataset
 
 Use the grab_many_gb_catch_errors_auto_CO1_year.plx script from Part II above the the appropriate search terms including the "BARCODE"[KYWD] individually for one year at a time or for a range of years as described in the script. 
 
@@ -155,7 +162,7 @@ python3 barcode_map.py
 
 The output file is EukaryotaBarcode_gg_latlon.csv
 
-## Part VI: Freshwater dataset
+## Part VI - Freshwater dataset
 
 Get a list of all species names for each higher level taxon of interest for freshwater biomonitoring from the NCBI taxonomy database.  Insert the following search term, one at a time, into the ebot_taxonomy3.plx script: Hirudinea, Oligochaeta AND Metazoa, Gastropoda, Coleoptera, Diptera, Ephemeroptera, Megaloptera, Odonata, Plecoptera AND Polyneoptera, Trichoptera, Amphipoda, Isopoda, Polychaeta, Turbellaria.  Rename each taxonomy.taxid outfile so they don't get overwritten, ex. part1_taxonomy.taxid
 
@@ -185,13 +192,13 @@ python3 freshwater_map.py
 
 The output file is freshwater_gg_latlon.csv
 
-## Part VII: Map country & latlon metadata with R
+## Part VII - Map country & latlon metadata with R
 
 Script to create Fig 4 is F4_maps_061218.R and uses the dataset AllEukaryota_gg_latlon.csv
 
 Script to create Supplementary Fig 3 (S3) is SF3_maps.R and uses the datasets EukaryotaBarcode_gg_latlon.csv, freshwater_gg_latlon.csv, and IUCN_gg_latlon.csv
 
-## Part VIII: Other R figures
+## Part VIII - Other R figures
 
 Script to create Fig 1 is F1_bars.R and the dataset is F1.csv
 
