@@ -12,6 +12,8 @@ This repository contains the scripts used to generate and analyze data for Porte
 [Part VI - Freshwater dataset](#part-vi---freshwater-dataset)  
 [Part VII - Map country & latlon metadata with R](#part-vii---map-country---latlon-metadata-with-R)  
 [Part VIII - Other R figures](#part-viii---other-r-figures)  
+[Part IX - Retrieve BOLD data via the BOLD API](#part-ix---retrieve-bold-data-via-the-bold-api)  
+[Part X - Retrieve BOLD data via the data releases](#part-x---retrieve-bold-data-via-the-data-releases)
 
 ## Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database
 
@@ -205,6 +207,40 @@ Script to create Fig 3 is F3_stackedbar.R and the dataset is F3.csv
 Script to create Supplementary Fig 1 (S1) is SF1_horizbar.R and the dataset is FS1.csv
 
 Script to create Supplementary Fig 2 (S2) is SF2_bars.R and the dataset is FS2.csv
+
+## Part IX - Retrieve BOLD data via the BOLD API
+
+This script retrieves FASTA files from the BOLD API.
+
+```linux
+zsh query_BOLD.sh taxonlist_all.txt
+```
+
+Concatenate the FASTA files into a single FASTA file.
+
+```linux
+ls | grep fasta | parallel -j 1 "cat {} >> cat_BOLD_API.fasta"
+```
+
+## Part X - Retrieve BOLD data via the data releases
+
+This script retrieves BOLD data releases.
+
+```linux
+zsh getBOLDdataReleases.sh releases.txt
+```
+
+Unzip all the files using Linux commands.
+
+```linux
+ls | grep zip | parallel -j 10 "unzip {}"
+```
+
+```linux
+perl parse_BOLD_data_releases.plx
+```
+
+The outfile is cat_BOLD_datareleases.fasta
 
 # Acknowledgements
 
