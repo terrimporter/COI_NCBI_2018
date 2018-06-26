@@ -7,7 +7,7 @@ This repository contains the scripts used to generate and analyze data for Porte
 [Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](#part-i---retrieve-taxonomy-ids-from-the-ncbi-taxonomy-database)  
 [Part II - Retrieve COI records from the NCBI nucleotide database](#part-ii---retrieve-coi-records-from-the-ncbi-nucleotide-database)  
 [Part III - Parse through the COI GenBank records and print reports](#part-iii---parse-through-the-coi-genbank-records-and-print-reports)  
-[Part IV - IUCN endangered animal species data analysis](#part-iv---iucn-endangered-animal-species-data-analysis)  
+[Part IV - IUCN endangered animal species dataset](#part-iv---iucn-endangered-animal-species-dataset)  
 [Part V - BARCODE dataset](#part-v---barcode-dataset)  
 [Part VI - Freshwater dataset](#part-vi---freshwater-dataset)  
 [Part VII - Map country & latlon metadata with R](#part-vii---map-country---latlon-metadata-with-R)  
@@ -100,7 +100,7 @@ python3 genbank_map.py
 
 The outfile is AllEukaryota_gg_latlon.csv 
 
-## Part IV - IUCN endangered animal species data analysis
+## Part IV - IUCN endangered animal species dataset
 ### Grab a list of target species from the IUCN website
 
 Go to http://www.iucnredlist.org . Use the filters for taxonomy-> Animalia, save the search and export as a .csv file.  From this data grab a list of all binomial species names including synonyms.  Exclude names with affinis or sp.nov.  Name this file IUCN_genus_species.txt.
