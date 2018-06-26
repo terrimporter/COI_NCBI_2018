@@ -4,14 +4,14 @@ This repository contains the scripts used to generate and analyze data for Porte
 
 ## Overview
 
-[Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](#part-i---retrieve-taxonomy-ids-from-the-ncbi-taxonomy-database)
-[Part II - Retrieve COI records from the NCBI nucleotide database](#part-ii---retrieve-coi-records-from-the-ncbi-nucleotide-database)
-[Part III - Parse through the COI GenBank records and print reports](#part-iii---parse-through-the-coi-genbank-records-and-print-reports)
-[Part IV - IUCN endangered animal species data analysis](#part-iv---iucn-endangered-animal-species-data-analysis)
-[Part V - BARCODE dataset](#part-v---barcode-dataset)
-[Part VI - Freshwater dataset](#part-vi---freshwater-dataset)
-[Part VII - Map country & latlon metadata with R](#part-vii---map-country-&-latlon-metadata-with-R)
-[Part VIII - Other R figures](#part-viii---other-r-figures)
+[Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](#part-i---retrieve-taxonomy-ids-from-the-ncbi-taxonomy-database)  
+[Part II - Retrieve COI records from the NCBI nucleotide database](#part-ii---retrieve-coi-records-from-the-ncbi-nucleotide-database)  
+[Part III - Parse through the COI GenBank records and print reports](#part-iii---parse-through-the-coi-genbank-records-and-print-reports)  
+[Part IV - IUCN endangered animal species data analysis](#part-iv---iucn-endangered-animal-species-data-analysis)  
+[Part V - BARCODE dataset](#part-v---barcode-dataset)  
+[Part VI - Freshwater dataset](#part-vi---freshwater-dataset)  
+[Part VII - Map country & latlon metadata with R](#part-vii---map-country---latlon-metadata-with-R)  
+[Part VIII - Other R figures](#part-viii---other-r-figures)  
 
 ## Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database
 
