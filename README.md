@@ -115,6 +115,16 @@ Using the clean taxonomy.taxid file with the taxonomy_crawl_for_genus_species_li
 
 The script quick_filter_gb_country_latlon_CO1.plx is described above in Part III and will search the text-formatted fully identified GenBank COI records for records with COI sequences are at least 500bp in length, with country and/or latlon metadata.  Continue with the remaining steps described in Part III.
 
+Clean up the tabular output to map this data in R.  The infile is cat.txt.
+
+```linux
+python3 IUCN_map.py
+```
+
+The outfile is IUCN_gg_latlon.csv 
+
+### Grab organism names
+
 The script below is similar to quick_filter_gb_country_latlon_CO1.plx and searches through the text-formatted fully identified GenBank COI records as above but also includes a field in the outfile for the organism name.  Another difference is that there is no filter for target taxa (ex. endangered species) and all taxa are reported.
 
 ```linux
@@ -129,20 +139,6 @@ Concatenate several outfiles using linux and GNU parallel, get a list of the uni
 ls | grep organism_20 | parallel -j 1 "cat {} >> organism_cat.txt"
 awk 'BEGIN {FS="\t"} {print $4}' organism_cat.txt | sort -u >> organism_cat.unique
 ```
-
-Concatenate several outfiles using Linux and GNU parallel for further processing of tabular data with Python.
-
-```linux
- ls | grep country_latlon_20 | parallel -j 1 "cat {} >> cat.txt"
- ```
-
-Clean up the tabular output to map this data in R.  The infile is cat.txt.
-
-```linux
-python3 IUCN_map.py
-```
-
-The outfile is IUCN_gg_latlon.csv 
 
 ## Part V - BARCODE dataset
 
