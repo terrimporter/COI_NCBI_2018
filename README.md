@@ -2,6 +2,10 @@
 
 This repository contains the scripts used to generate and analyze data for Porter & Hajibabaei, 2018 bioRxiv doi: https://doi.org/10.1101/353904
 
+## Overview
+
+[Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](##Part-I---Retrieve-Taxonomy-IDs-from-the-NCBI-taxonomy-database)
+
 ## Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database
 
 Retrieve all taxonids from the NCBI taxonomy database for all Eukaryotes with a species name.  Be sure to add your email address to line 85 in ebot_taxonomy3.plx.
