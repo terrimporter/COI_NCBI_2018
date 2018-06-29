@@ -2,6 +2,12 @@
 
 This repository contains the scripts used to generate and analyze data for Porter & Hajibabaei, 2018 bioRxiv doi: https://doi.org/10.1101/353904
 
+## How to cite
+
+If you find these methods/scripts useful and use them in a publication, please cite:
+
+Porter, T.M., Hajibabaei, M. (2018) Over 2.5 million COI sequences and growing. bioRxiv, DOI: 10.1101/353904
+
 ## Overview
 
 [Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database](#part-i---retrieve-taxonomy-ids-from-the-ncbi-taxonomy-database)  
