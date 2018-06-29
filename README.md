@@ -1,11 +1,10 @@
 # README
 
-This repository contains the scripts used to generate and analyze data for Porter & Hajibabaei, 2018 bioRxiv doi: https://doi.org/10.1101/353904
+This repository contains the scripts used to: 1) mine taxonomy data from the NCBI taxonomy database and from the International Union for Conservation of Nature website, 2) mine COI sequence records from the NCBI nucleotide database, BOLD API, and BOLD data releases.  I also provide additional scripts to filter results, print reports, generate figures, etc.
 
 ## How to cite
 
 If you find these methods/scripts useful and use them in a publication, please cite:
-
 Porter, T.M., Hajibabaei, M. (2018) Over 2.5 million COI sequences and growing. bioRxiv, DOI: 10.1101/353904
 
 ## Overview
