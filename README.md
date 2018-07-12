@@ -46,7 +46,7 @@ split -l 100 Genus_species.txt
 
 The outfiles will be automatically named with the prefix 'x'.
 
-Reformat these files for the NCBI Entrez query using Linux commands and GNU parallel.  GNU parallel can be obtained from https://www.gnu.org/software/parallel/ .  Be sure to update the -j flag to reflect the number of available cores for this step.
+Reformat these files for the NCBI Entrez query using Linux commands and GNU parallel (Tang, 2011).  GNU parallel can be obtained from https://www.gnu.org/software/parallel/ .  Be sure to update the -j flag to reflect the number of available cores for this step.
 
 ```linux
 ls | grep '^x' | parallel -j 23 "perl reformat_list_for_entrez_taxonomy.plx {}"
@@ -67,7 +67,7 @@ cd reformatted_taxids
 
 ## Part II - Retrieve COI records from the NCBI nucleotide database
 
-Retrieve GenBank formatted text files from the NCBI nucleotide database.  Use Linux and GNU parallel to run a single job with a bunch of infiles.  The infiles here are the reformatted xsomething.txt files.  This script requires Bio::DB::Eutilities that can be obtained from CPAN.  Be sure to update the search terms used for the Entrez query on line 28 and your email address on line 31. 
+Retrieve GenBank formatted text files from the NCBI nucleotide database.  Use basic Linux commands with GNU parallel to run a single job with a bunch of infiles.  The infiles here are the reformatted xsomething.txt files.  This script requires Bio::DB::Eutilities that can be obtained from CPAN.  Be sure to update the search terms used for the Entrez query on line 28 and your email address on line 31. 
 
 ```linux
 ls | grep .txt | parallel -j 1 "perl grab_many_gb_catch_errors_auto_CO1_year.plx {}"
@@ -251,4 +251,8 @@ The outfile is cat_BOLD_datareleases.fasta
 
 I would like to acknowedge funding from the Canadian government through the Genomcis Research and Development Initiative (GRDI) EcoBiomics project.
 
-Last updated: June 26, 2018
+# References
+
+Tange, O. (2011). GNU Parallel - The Command-Line Power Tool. ;;Login: The USENIX Magazine, February, 42–47. Available from https://www.gnu.org/software/parallel/
+
+Last updated: July 12, 2018
