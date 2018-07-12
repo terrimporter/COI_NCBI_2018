@@ -18,7 +18,7 @@ Porter, T.M., Hajibabaei, M. (2018) Over 2.5 million COI sequences and growing. 
 [Part VII - Map country & latlon metadata with R](#part-vii---map-country---latlon-metadata-with-R)  
 [Part VIII - Other R figures](#part-viii---other-r-figures)  
 [Part IX - Retrieve BOLD data via the BOLD API](#part-ix---retrieve-bold-data-via-the-bold-api)  
-[Part X - Retrieve BOLD data via the data releases](#part-x---retrieve-bold-data-via-the-data-releases) 
+[Part X - Retrieve BOLD data via the data releases](#part-x---retrieve-bold-data-via-the-data-releases)  
 [Acknowledgements](#acknowledgements)  
 [References](#references)  
 
