@@ -24,7 +24,7 @@ Porter, T.M., Hajibabaei, M. (2018) Over 2.5 million COI sequences and growing. 
 
 ## Part I - Retrieve Taxonomy IDs from the NCBI taxonomy database
 
-Retrieve all taxonids from the NCBI taxonomy database for all Eukaryotes with a species name.  Be sure to add your email address to line 85 in ebot_taxonomy3.plx.
+Retrieve all taxonids from the NCBI taxonomy database for all Eukaryotes with a species name.  Be sure to add your email address to line 85 in ebot_taxonomy3.plx.  Note the search term is on line 89 $params{term} and it needs to be formatted such that spaces are replaced by plus signs and other punctuation are %-URL encoded where %22 represents a double quote.
 
 ```perl
 perl ebot_taxonomy3.plx
