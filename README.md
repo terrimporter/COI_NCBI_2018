@@ -4,7 +4,7 @@ This repository contains the scripts used to: 1) mine taxonomy data from the NCB
 
 ## How to cite
 
-If you find these methods/scripts useful and use them in a publication, please cite:
+If you find these methods/scripts useful and use them in a publication, please cite:  
 Porter, T.M., Hajibabaei, M. (2018) Over 2.5 million COI sequences and growing. PLoS ONE, 13(9): e0200177 available from https://doi.org/10.1371/journal.pone.0200177
 
 ## Overview
