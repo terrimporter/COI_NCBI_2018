@@ -31,7 +31,8 @@ my $gi;
 my $length;
 my $minlength=500;
 my $value_gene;
-my $value;year
+my $value;
+my $year; # typo fixed 2/09/21
 my $name;
 
 #declare array
